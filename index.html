@@ -3,8 +3,43 @@
 <head>
     <title>Auto Ria Clone</title>
     <style>
+        /* styles.css */
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        button {
+            background-color: #8c8c8c;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8c8c8c;
+        }
+
+        #register-btn {
+            margin-right: 10px;
+        }
+
+        #login-btn {
+            margin-left: 8px;
+        }
         body {
             font-family: Arial, sans-serif;
+            background-color: #84bbdc;
         }
         .container {
             max-width: 800px;
@@ -44,6 +79,14 @@
 <div class="container">
     <h2>Auto Ria Clone</h2>
     <form>
+        <header>
+            <nav>
+                <ul>
+                    <li><button id="register-btn">Register</button></li>
+                    <li><button id="login-btn">Login</button></li>
+                </ul>
+            </nav>
+        </header>
         <div class="input-group">
             <label for="type">Car</label>
             <select id="type" name="type">
